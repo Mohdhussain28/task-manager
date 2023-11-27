@@ -1,0 +1,81 @@
+# Task Management System API
+
+This project is a Node.js application that provides a RESTful API for a task management system. It allows users to create tasks, assign them to others, mark them as completed, and provides basic analytics on task completion.
+
+## API Endpoints
+
+### Create a new task
+Endpoint: `POST /tasks`
+Description: Creates a new task.
+
+### Retrieve a list of all tasks
+Endpoint: `GET /tasks`
+Description: Retrieves a list of all tasks.
+
+### Retrieve a single task by ID
+Endpoint: `GET /tasks/:id`
+Description: Retrieves a single task by its ID.
+
+### Update an existing task (including marking as completed)
+Endpoint: `PUT /tasks/:id`
+Description: Updates an existing task, including marking it as completed.
+
+### Delete a task by ID
+Endpoint: `DELETE /tasks/:id`
+Description: Deletes a task by its ID.
+
+### User Registration
+Endpoint: `POST /register`
+Description: Registers a new user.
+
+### User Login
+Endpoint: `POST /login`
+Description: Logs in a user using email and password.
+
+### Refresh Token
+Endpoint: `POST /refresh-token`
+Description: Refreshes authentication tokens.
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js
+- Firebase Project with Authentication enabled
+- Google Cloud Project with Google Sign-In API enabled
+
+### Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/Mohdhussain28/task-manager.git
+
+# Navigate to the project directory
+cd functions
+
+# Install dependencies
+npm install
+
+
+Usage
+Register
+To register a new user, make a POST request to /register with the user's information.
+
+Login
+To log in a user, make a POST request to /login with the username and password.
+
+Refresh Token
+To refresh authentication tokens, make a POST request to /refresh-token with the refresh token.
+
+Dependencies
+express
+cors
+bcrypt
+jsonwebtoken
+firebase-admin
+
+Contributing
+Feel free to contribute to this project by opening issues or creating pull requests.
+
+License
+This project is licensed under the MIT License - see the LICENSE file for detail
