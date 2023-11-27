@@ -56,6 +56,8 @@ cd functions
 # Install dependencies
 npm install
 
+# Run Server 
+npm run serve
 
 Usage
 Register
@@ -70,12 +72,10 @@ To refresh authentication tokens, make a POST request to /refresh-token with the
 Dependencies
 express
 cors
+body-parser
 bcrypt
 jsonwebtoken
 firebase-admin
 
 Contributing
 Feel free to contribute to this project by opening issues or creating pull requests.
-
-License
-This project is licensed under the MIT License - see the LICENSE file for detail
