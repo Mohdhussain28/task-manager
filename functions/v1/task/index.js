@@ -46,8 +46,8 @@ router.get("/tasks/:taskId", async (req, res) => {
 
 router.put("/tasks/:taskId", async (req, res) => {
     try {
-        const taskId = req.params.taskId;
-        const updatedData = req.body;
+        const taskId = req?.params?.taskId;
+        const updatedData = req?.body;
         await db.collection("tasks").doc(taskId).update(updatedData);
         res.status(200).json({ message: "Task updated successfully" });
     } catch (error) {
@@ -58,7 +58,7 @@ router.put("/tasks/:taskId", async (req, res) => {
 
 router.delete("/tasks/:taskId", async (req, res) => {
     try {
-        const taskId = req.params.taskId;
+        const taskId = req?.params?.taskId;
         await db.collection("tasks").doc(taskId).delete();
         res.status(200).json({ message: "Task deleted successfully" });
     } catch (error) {
