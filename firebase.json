@@ -10,6 +10,7 @@
       "ignore": [
         "node_modules",
         ".git",
+        "serviceAccountKey.json",
         "firebase-debug.log",
         "firebase-debug.*.log"
       ]
